@@ -1,6 +1,7 @@
 # 🌤️ Small Weather Widget
 
 A simple and responsive Weather Widget built using React, Material UI, and a Weather API.
+
 It allows users to search for a city and view real-time weather information in a clean and modern UI.
 
 ## 🚀 Features
@@ -34,11 +35,18 @@ It allows users to search for a city and view real-time weather information in a
 - Axios / Fetch API – API requests
 
 ## 📦 Installation
+
 1️⃣ Clone the repository
+
 `git clone https://github.com/your-username/weather-widget.git`
+
 `cd weather-widget`
+
 2️⃣ Install dependencies
+
 `npm install`
+
+
 3️⃣ Add your Weather API key
 
 - Create a .env file in the root directory:
@@ -48,13 +56,15 @@ It allows users to search for a city and view real-time weather information in a
 #### ⚠️ Never expose your API key publicly.
 
 4️⃣ Start the development server
-npm start
+
+`npm start`
 
 App will run at:
 
 `http://localhost:3000`
 
 ## 📁 Project Structure
+
 weather-widget/
 
 │
@@ -87,15 +97,22 @@ weather-widget/
 
 Example API request:
 
-`
+```
+
 const getWeather = async (city) => {
+
   const response = await fetch(
+  
     `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.REACT_APP_WEATHER_API_KEY}&units=metric`
+    
   );
   const data = await response.json();
+  
   return data;
+  
 };
-`
+
+```
 
 ## 🎨 UI Components Used (Material UI)
 
@@ -130,6 +147,7 @@ const getWeather = async (city) => {
 ## 🤝 Contributing
 
 Pull requests are welcome!
+
 For major changes, please open an issue first to discuss what you would like to change.
 
 ## 📄 License
