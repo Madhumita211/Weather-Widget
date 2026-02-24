@@ -5,9 +5,9 @@ It allows users to search for a city and view real-time weather information in a
 
 ## 🚀 Features
 
-### 🌍 Search weather by city name
+🌍 Search weather by city name
 
-### 🌡️ Displays:
+🌡️ Displays:
 
 - Temperature
 
@@ -17,11 +17,11 @@ It allows users to search for a city and view real-time weather information in a
 
 - Wind speed
 
-### 🎨 Clean and responsive UI using Material UI
+🎨 Clean and responsive UI using Material UI
 
-### ⚡ Fast API-based real-time data
+⚡ Fast API-based real-time data
 
-### 📱 Mobile-friendly design
+📱 Mobile-friendly design
 
 ## 🛠️ Tech Stack
 
@@ -56,31 +56,46 @@ App will run at:
 
 ## 📁 Project Structure
 weather-widget/
+
 │
+
 ├── public/
+
 ├── src/
+
 │   ├── components/
+
 │   │   ├── WeatherCard.jsx
+
 │   │   └── SearchBar.jsx
+
 │   ├── App.js
+
 │   ├── api.js
+
 │   └── index.js
+
 │
+
 ├── .env
+
 ├── package.json
+
 └── README.md
 
 ## 🔌 API Integration
 
 Example API request:
 
-`const getWeather = async (city) => {
+`
+const getWeather = async (city) => {
   const response = await fetch(
-    ``https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.REACT_APP_WEATHER_API_KEY}&units=metric``
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.REACT_APP_WEATHER_API_KEY}&units=metric`
   );
   const data = await response.json();
   return data;
-};`
+};
+`
 
 ## 🎨 UI Components Used (Material UI)
 
